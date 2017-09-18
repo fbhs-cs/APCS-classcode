@@ -17,7 +17,7 @@ public class TypeDemo
     
     anInt = 42;
     System.out.println("anInt="+anInt); //concatenation
-    aBool = 
+    aBool = true;
     //reference data types
     String aString;          //strings are IMMUTABLE
     aString = "Willy von Hamerschmidt";
