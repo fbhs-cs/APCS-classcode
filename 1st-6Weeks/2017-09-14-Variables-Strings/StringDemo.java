@@ -7,7 +7,10 @@ public class StringDemo
   public static void main(String[] args) 
   { 
     //Operators for Strings
-    
+    String first = "Bob";
+    String last = "Smith";
+    String name = first + " " + last;
+    System.out.println(name);
     
     
     
