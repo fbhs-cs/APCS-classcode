@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Convert
+public class ConvertInClass
 {
   public static void main(String[] args)
   {
