@@ -13,8 +13,10 @@ public class RandomDemo
     
     //get a random integer between 0 and 99, then add 1 to it so that it
     //is between 1 and 100.
-    int number = random.nextInt(100) + 1;  
-    System.out.println(number);
+    int number1 = random.nextInt(100) + 1; 
+    int number2 = random.nextInt(1000) + 1;
+    int number3 = random.nextInt(11) + 10;
+    System.out.println(number1 + " " + number2 + " " + number3);
     
     
   }
