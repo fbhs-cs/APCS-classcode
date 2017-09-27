@@ -1,14 +1,14 @@
-/** A program that displays whether or not a particular year 
-  * is a leap year.
+/** A program that displays whether or not 
+  * a particular year is a leap year.
   */
 public class LeapYear
 {
   
   /**Displays whether or not year is a leapyear.
-    * This is based on the Gregorian calendar, so it only
-    * works for years after 1582
+    * This is based on the Gregorian calendar, 
+    * so it only works for years after 1582
     *
-    * @param year after 1582
+    * @param year a year after 1582
     */
   public static void isLeapYear(int year)
   {
