@@ -18,15 +18,11 @@ public class LeapYearEvenShorter
       return;
     }
     
-    if( year % 400 == 0)
+    if( (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
     {
       System.out.printf("%d is a leap year.\n",year);
     }
-    else if (year % 4 == 0) // only gets here if not divisible by 400
-    {
-      System.out.printf("%d is a leap year.\n",year);
-    }
-    else // not divisible by 4
+    else 
     {
       System.out.printf("%d is NOT a leap year!\n",year);
     }
