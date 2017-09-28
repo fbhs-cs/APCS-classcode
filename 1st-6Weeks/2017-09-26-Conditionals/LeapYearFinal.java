@@ -1,7 +1,7 @@
 /** A program that displays whether or not 
   * a particular year is a leap year.
   */
-public class LeapYearEvenShorter
+public class LeapYearFinal
 {
   
   /**Displays whether or not year is a leapyear.
