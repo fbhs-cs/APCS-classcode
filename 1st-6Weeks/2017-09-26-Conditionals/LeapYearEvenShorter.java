@@ -1,7 +1,7 @@
 /** A program that displays whether or not 
   * a particular year is a leap year.
   */
-public class LeapYearWorking
+public class LeapYearEvenShorter
 {
   
   /**Displays whether or not year is a leapyear.
@@ -18,15 +18,15 @@ public class LeapYearWorking
       return;
     }
     
-    boolean leapFlag;
-    leapFlag = ( (year % 4 == 0 && year % 100 != 0)
-                  || (year % 4 == 0 && year % 400 == 0) );
-    
-    if( leapFlag )
+    if( year % 400 == 0)
     {
       System.out.printf("%d is a leap year.\n",year);
     }
-    else
+    else if (year % 4 == 0) // only gets here if not divisible by 400
+    {
+      System.out.printf("%d is a leap year.\n",year);
+    }
+    else // not divisible by 4
     {
       System.out.printf("%d is NOT a leap year!\n",year);
     }
