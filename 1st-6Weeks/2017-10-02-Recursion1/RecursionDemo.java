@@ -9,11 +9,14 @@ public class RecursionDemo
     if (n == 0)
     {
       System.out.println("Blastoff!");
+      return;
     }
     else
     {
       System.out.println(n);
       countDown(n-1);
+      System.out.println(n);
+      return;
     }
   }
   
