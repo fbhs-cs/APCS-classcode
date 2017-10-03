@@ -63,7 +63,7 @@ public class RecursionDemo
     //countDown(3);
     //nLines(4);
     //countDown(5);
-    //forever("Hello");
+    forever("Hello");
     //countUp(5);
     //displayBinary(23);
   }
