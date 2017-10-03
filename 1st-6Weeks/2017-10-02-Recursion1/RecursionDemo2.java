@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class RecursionDemo2
 {
   public static void recFunc(int n)
@@ -11,12 +13,16 @@ public class RecursionDemo2
     {
       System.out.printf("Calling recFunc(%d)\n",n-1);
       recFunc(n-1);
-      System.out.printf("Returned from recFunc(%d)\n",n-1);
+      System.out.printf("Back in recFunc(%d)\n",n);
     }
   }
   
   public static void main(String[] args)
   {
-    recFunc(5);
+    Scanner kb = new Scanner(System.in);
+    System.out.print("How many recursions do you want? ");
+    int numRec = kb.nextInt();
+    recFunc(numRec);
+    System.out.println("Back in main.");
   }
 }
