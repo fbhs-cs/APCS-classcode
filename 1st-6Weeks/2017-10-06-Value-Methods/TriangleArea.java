@@ -1,7 +1,5 @@
-
-public class ValueMethodsDemo
+public class TriangleArea
 {
-  
   /** Find the area of a triangle with side lengths 
     * a, b, and c using Heron's Formula.
     * 
@@ -63,18 +61,19 @@ public class ValueMethodsDemo
     
   }
   
+  public static double findDistance(double x1, double y1, double x2, double y2)
+  {
+    return 0.0;
   
+  }
   
-  
-  
+  public static double triangleArea(double x1, double y1, double x2, double y2, double x3, double y3)
+  {
+    return 0.0;
+  }
   
   public static void main(String[] args)
   {
-    double sideA = 12.3;
-    double sideB = 15.9;
-    double sideC = 19;
-    double area = herons(sideA,sideB,sideC);
-    System.out.printf("The area is %.3f\n",area);
+   
   }
-  
 }
