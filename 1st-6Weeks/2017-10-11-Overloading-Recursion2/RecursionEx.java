@@ -24,7 +24,7 @@ public class RecursionEx
   
   public static void main(String[] args)
   {
-    int factNum = 17;
+    int factNum = 9;
     int factResult = factorial(factNum);
     System.out.printf("%d! = %d\n",factNum,factResult);
     
