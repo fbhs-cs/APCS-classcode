@@ -1,5 +1,14 @@
-public class Euclid
+/** A sample recursive program
+  */
+public class EuclidEx
 {
+  /** A recursive implementation of Euclid's Algorithm 
+  * to find the greatest common divisor of two integers
+  * 
+  * @param p the larger integer
+  * @param q the smaller integer
+  * @return the gcd of p and q 
+  */
   public static int gcd(int p, int q)
   {
     if(q==0)
