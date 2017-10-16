@@ -6,7 +6,7 @@ import java.awt.*;
 import java.util.*;
 
 public class Sierpinski {
-    public static final int SIZE = 512;  // height/width of DrawingPanel
+    public static final int SIZE = 768;  // height/width of DrawingPanel
 
     public static void main(String[] args) {
         // prompt for level
