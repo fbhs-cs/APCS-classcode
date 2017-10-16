@@ -13,22 +13,18 @@
 
 public class dowhileLoopDemo
 {
-  
   public static void main(String[] args)
   {
     //start loop control variable
     int i = 1;
     do
     {
-      
       System.out.println("Hello "+i); //action
       i++; //step...increase i adding 1
-      
     }
     //check condition is at the end
     while (i <= 5); 
     //first statement following the loop
     System.out.println("Loop is finished...i = "+i);
   }
-  
 }
