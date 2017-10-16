@@ -1,3 +1,16 @@
+/**An example program for using the for loop
+  */
+
+/* Every loop has four basic parts that
+ * MUST be present in order for the loop
+ * to work properly and effictively:
+ * 
+ * 1) START
+ * 2) CHECK
+ * 3) ACTION
+ * 4) STEP
+ */
+
 public class forLoopExample
 {
   

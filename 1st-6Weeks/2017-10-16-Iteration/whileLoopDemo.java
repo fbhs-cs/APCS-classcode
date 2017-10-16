@@ -1,3 +1,16 @@
+/**An example program for using the while loop
+  */
+
+/* Every loop has four basic parts that
+ * MUST be present in order for the loop
+ * to work properly and effictively:
+ * 
+ * 1) START
+ * 2) CHECK
+ * 3) ACTION
+ * 4) STEP
+ */
+
 public class whileLoopDemo
 {
   
@@ -13,7 +26,7 @@ public class whileLoopDemo
     {
       
       System.out.println("Hello "+i); //action
-      i = i + 1; //step...increase x adding 1
+      i = i + 1; //step...increase i adding 1
       // i += 1; //alternate ways of incrementing
       // i++;    //yet another way to increment
       
