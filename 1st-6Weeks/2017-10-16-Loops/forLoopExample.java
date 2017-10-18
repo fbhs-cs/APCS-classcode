@@ -13,16 +13,26 @@
 
 public class forLoopExample
 {
+  public static void drawWall(int size, int start)
+  {
+   for(int i = 0; i < size; i++)
+   {
+     System.out.print("-");
+   }
+   System.out.println();
+  }
+  
   public static void main(String[] args)
   {
     //loop control variable declared, but not initialized
-    int i;
+    //int i;
     //start, check, and step all in one compound statement
-    for (i = 1; i <= 5; i++)
+    for (int i = 1; i <= 10; i++)
     {
-      System.out.println("Hello "+i); //action
+      System.out.print("Hello "); //action
     }
     //first statement after the loop
-    System.out.println("Loop is finished...i = "+i);
+    System.out.println("Loop is finished...");
+    drawWall(50,10);
   }
 }
