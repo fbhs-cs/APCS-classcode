@@ -17,11 +17,11 @@ public class HistogramDemo
     for (int i = 0; i < a.length; i++)
     {
       //uncomment to understand why the second way of counting is inefficient
-      //System.out.print(a[i]);
+      System.out.print(a[i]);
       if (a[i] >= low && a[i] < high)
         count++;
     }
-      //System.out.println();
+      System.out.println();
     return count;
     
   }

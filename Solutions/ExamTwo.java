@@ -19,4 +19,12 @@ public class ExamTwo
     }
   }
   
+  public static void main(String[] args)
+  {
+    collatz(3);
+    System.out.println();
+    collatz(111);
+    System.out.println();
+  }
+  
 }
