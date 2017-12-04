@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class StringTraversalDemo
+public class StringUtils
 { 
   /**
    * reverses a string
@@ -41,10 +41,50 @@ public class StringTraversalDemo
     return counts;
   }
   
+  public static boolean isPalindrome(String str)
+  {
+    return str.equals(reverse(str));
+  }
+  
+  public static boolean isDoubloon(String str)
+  {
+   int[] counts = countChars(str);
+    for(int count: counts)
+    {
+      if (count != 0 && count != 2)
+        return false;
+    }
+    return true;
+  }
+  
+  public static boolean areAnagrams(String str1, String str2)
+  {
+   int[] counts1 = countChars(str1);
+   int[] counts2 = countChars(str2);
+   for(int i =0; i < counts1.length;i++)
+   {
+    if(counts1[i] != counts2[i])
+      return false;
+   }
+   return true;
+  }
+  
+  public static boolean canSpell(String tiles, String word)
+  {
+   int[] tileCounts = countChars(tiles);
+   int[] wordCounts = countChars(word);
+   for(int i = 0;i<tileCounts.length;i++)
+   {
+     if (tileCounts[i] < wordCounts[i])
+        return false;
+  
+   }
+   return true;
+  }
+  
   public static void main(String[] args)
   {
-    int[] temp = countChars("Hello world!!");
-    System.out.println(Arrays.toString(temp));
+    System.out.println(canSpell("quijibo","jibus"));
   }
   
 }
