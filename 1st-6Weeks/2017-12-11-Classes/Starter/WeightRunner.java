@@ -8,7 +8,7 @@ public class WeightRunner
   // Create a new Weight object
    Weight w1 = new Weight();
    Weight w2 = new Weight(3,6);
-   Weight w3 = new Weight(5,12);
+   Weight w3 = new Weight(5,30);
    
    System.out.print("w1.printWeight(): ");
    w1.printWeight();
