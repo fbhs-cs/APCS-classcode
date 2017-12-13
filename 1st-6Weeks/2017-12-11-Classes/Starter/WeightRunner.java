@@ -28,7 +28,7 @@ public class WeightRunner
    System.out.println("w2: " + w2);
    System.out.println();
    
-   System.out.println("w3 has "+w1.getPounds()+" pounds and "+w1.getOunces()+" ounces.");
+   System.out.println("w3 has "+w3.getPounds()+" pounds and "+w3.getOunces()+" ounces.");
    System.out.println();
    
    Weight w4 = w2.add(w3);
