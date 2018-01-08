@@ -7,10 +7,9 @@ public class PerfectRunner
 {
  public static void main( String args[] )
  {
-  Perfect a = new Perfect();
   // uncomment below this line once you have your methods working
   
-  //a.setNumber(496);
+  //Perfect a = new Perfect(496);
   //System.out.println(a); 
   //a.setNumber(45);
   //System.out.println(a); 
