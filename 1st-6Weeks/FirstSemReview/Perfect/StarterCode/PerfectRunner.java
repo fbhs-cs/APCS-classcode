@@ -8,9 +8,27 @@ public class PerfectRunner
  public static void main( String args[] )
  {
   Perfect a = new Perfect();
+  // uncomment below this line once you have your methods working
+  
   //a.setNumber(496);
   //System.out.println(a); 
-  
-  //add remaining test cases
+  //a.setNumber(45);
+  //System.out.println(a); 
+  //a.setNumber(6);
+  //System.out.println(a); 
+  //a.setNumber(14);
+  //System.out.println(a); 
+  //a.setNumber(8128);
+  //System.out.println(a); 
+  //a.setNumber(1245);
+  //System.out.println(a); 
+  //a.setNumber(33);
+  //System.out.println(a); 
+  //a.setNumber(28);
+  //System.out.println(a); 
+  //a.setNumber(27);
+  //System.out.println(a); 
+  //a.setNumber(33550336);
+  //System.out.println(a); 
  }
 }
