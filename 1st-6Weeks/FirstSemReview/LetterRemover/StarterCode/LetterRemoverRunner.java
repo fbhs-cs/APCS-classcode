@@ -11,15 +11,15 @@ public class LetterRemoverRunner
    // uncomment below this line once you have the LetterRemover
    // class methods written
    
-   //LetterRemover message = new LetterRemover("I am Sam I am","a");
+   //LetterRemover message = new LetterRemover("I am Sam I am",'a');
    //System.out.println(message);
-   //message.setRemover("ssssssssxssssesssssesss","s");
+   //message.setRemover("ssssssssxssssesssssesss",'s');
    //System.out.println(message);
-   //message.setRemover("qwertyqwertyqwerty","a");
+   //message.setRemover("qwertyqwertyqwerty",'a');
    //System.out.println(message);
-   //message.setRemover("abababababa","b");
+   //message.setRemover("abababababa",'b');
    //System.out.println(message);
-   //message.setRemover("abaababababa","x");
+   //message.setRemover("abaababababa",'x');
    //System.out.println(message);
            
  }

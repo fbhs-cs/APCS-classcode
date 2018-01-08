@@ -7,7 +7,8 @@ public class PerfectRunner
 {
  public static void main( String args[] )
  {
-  // uncomment below this line once you have your methods working
+  // uncomment below this line once you 
+  // have your methods working
   
   //Perfect a = new Perfect(496);
   //System.out.println(a); 
