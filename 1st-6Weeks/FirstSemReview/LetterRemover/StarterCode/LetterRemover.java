@@ -9,7 +9,7 @@ public class LetterRemover
 
  public LetterRemover()
  {
-  //call set
+  
  }
 
  //add in second constructor
