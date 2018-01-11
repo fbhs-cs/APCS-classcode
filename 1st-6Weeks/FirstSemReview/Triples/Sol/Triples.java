@@ -1,8 +1,3 @@
-/* Save a copy of this file in the
- * parent directory (Triples) and
- * delete this comment.
- */
-
 public class Triples
 {
    private int number;
