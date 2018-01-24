@@ -1,3 +1,5 @@
+/** Code from January 22/23 for the Card class implementation */
+  
 public class Card
 {
   public static final String[] SUITS = {"Clubs","Diamonds","Hearts","Spades"};
@@ -7,13 +9,14 @@ public class Card
   private final int suit;
   private final int rank;
   
-  
+  /* constructor */
   public Card(int rank, int suit)
   {
     this.rank = rank;
     this.suit = suit;
   }
   
+  /* Getters */
   public int getSuit()
   {
     return this.suit;
@@ -24,11 +27,18 @@ public class Card
     return this.rank;
   }
   
+  
+  /* Equals method returns true if the cards are the same
+   * suit and rank
+   */
   public boolean equals(Card other)
   {
     return this.suit == other.suit && this.rank == other.rank;
   }
   
+  /* compareTo method returns -1 if this < other, 1 if this > other, and 
+   * 0 of this == other
+   */
   public int compareTo(Card other)
   {
     if(this.suit < other.suit)
@@ -46,6 +56,7 @@ public class Card
     return 0;
   }
   
+  /* linear search */
   public static int search(Card[] cards, Card target)
   {
     for(int i=0;i<cards.length;i++)
@@ -56,6 +67,7 @@ public class Card
     return -1;
   }
   
+  /* binary search -- see BookCode/Search.java for a recursive version */
   public static int binarySearch(Card[] cards, Card target)
   {
     int min = 0;
