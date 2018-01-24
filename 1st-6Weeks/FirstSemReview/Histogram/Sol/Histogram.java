@@ -15,12 +15,24 @@ public class Histogram
   //set method 
   public void setHist(int[] list)
   {
-    //numCount should be filled in here
+    numCount = new int[10];
+    for(int i:list)
+    {
+      if(i >= 0 && i <= 9)
+      {
+        numCount[i]++;
+      }
+    }
   }
   
   //toString method
   public String toString()
   {
-    return "";
+    String out = "";
+    for(int i = 0; i < numCount.length; i++)
+    {
+      out += String.format("%d - %d\n",i,numCount[i]);
+    }
+    return out;
   }
 }
