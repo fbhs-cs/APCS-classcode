@@ -1,5 +1,6 @@
 /** Code from January 22/23 for the Card class implementation */
-  
+import java.util.Arrays;
+
 public class Card
 {
   public static final String[] SUITS = {"Clubs","Diamonds","Hearts","Spades"};
@@ -47,6 +48,13 @@ public class Card
     if(this.suit > other.suit)
       return 1;
     
+    // aces are greatest
+    if(this.rank == 1 && other.rank != 1)
+      return 1;
+    
+    if(other.rank == 1 && this.rank != 1)
+      return -1;
+    
     if(this.rank < other.rank)
       return -1;
     
@@ -87,7 +95,7 @@ public class Card
         max = cur;
       }
       
-        
+      
       cur = (min + max)/2;          
     }
     return cur;
@@ -109,7 +117,7 @@ public class Card
     return out;
   }
   
-  public static void main(String[] args)
+  public static Card[] makeDeck()
   {
     Card[] cards = new Card[52];
     int index = 0;
@@ -120,13 +128,75 @@ public class Card
         cards[index] = new Card(rank,suit);
         index++;
       }
-    } 
-    Card t = new Card(6,3);
-    int loc = binarySearch(cards,t);
-    System.out.println(loc);
+    }
+    return cards;
+  }
+  
+  
+  public static int[] suitHist(Card[] cards)
+  {
+    int[] hist = new int[4];
+    for(Card c:cards)
+    {
+      hist[c.getSuit()]++; 
+    }
+    return hist;
+  }
+  
+  public static boolean hasFlush(Card[] hand)
+  {
+   int[] hist = suitHist(hand);
+    for(int s:hist) 
+    {
+      if(s>=5)
+        return true;
+    }
+   return false;
+  }
+  
+  
+  public static void main(String[] args)
+  {
+    System.out.println("Testing makeDeck()");
+    Card[] deck = makeDeck(); 
+    System.out.println(Arrays.toString(deck));
+    System.out.println();
     
+    System.out.println("Testing suitHist()");
+    int[] histogram = suitHist(deck);
+    System.out.println(Arrays.toString(histogram));
+    System.out.println();
     
+     
+    Card aceS = new Card(1,3);
+    Card kingS = new Card(13,3);
+    System.out.println("Made cards: " + aceS + " " + kingS);
+    System.out.println("ace.compareTo(king) = "+aceS.compareTo(kingS)+" (should be 1)");
     
+    System.out.println();
+    
+    System.out.println("Making hands...");
+    
+    Card tenH = new Card(10,2);
+    Card jackH = new Card(11,2);
+    Card queenH = new Card(12,2);
+    Card kingH = new Card(13,2);
+    Card aceH = new Card(1,2);
+    Card[] hand1 = {aceS,kingS,tenH,jackH,queenH,kingH,aceH};
+    Card[] hand2 = {tenH,jackH,queenH,kingH,aceH};
+    Card[] hand3 = {aceS,kingS,jackH,queenH,tenH};
+    
+    System.out.println("hand1: " + Arrays.toString(hand1));
+    System.out.println(Arrays.toString(suitHist(hand1)));
+    System.out.println("hasFlush(hand1): " + hasFlush(hand1));
+    System.out.println();
+    System.out.println("hand2: " + Arrays.toString(hand2));
+    System.out.println(Arrays.toString(suitHist(hand2)));
+    System.out.println("hasFlush(hand2): " + hasFlush(hand2));
+    System.out.println();
+    System.out.println("hand3: " + Arrays.toString(hand3));
+    System.out.println(Arrays.toString(suitHist(hand3)));
+    System.out.println("hasFlush(hand3): " + hasFlush(hand3));
     
   }
 }
