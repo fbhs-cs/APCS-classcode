@@ -14,10 +14,23 @@ public class CardTester {
    Card card3 = new Card("8","Clubs",8);
    
    System.out.println(card1);
-   System.out.println("card1 == card2:" + card1.equals(card2));
    System.out.println(card1.rank());
+   System.out.println(card1.suit());
+   System.out.println(card1.pointValue());
+   System.out.println();
+   System.out.println(card2);
+   System.out.println(card2.rank());
    System.out.println(card2.suit());
+   System.out.println(card2.pointValue());
+   System.out.println();
+   System.out.println(card3);
+   System.out.println(card3.rank());
+   System.out.println(card3.suit());
    System.out.println(card3.pointValue());
+   System.out.println();
+   System.out.println("card1.matches(card2): " + card1.matches(card2));
+   System.out.println("card2.matches(card2): " + card2.matches(card2));
+
    
  }
 }

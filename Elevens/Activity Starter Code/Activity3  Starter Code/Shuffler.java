@@ -1,6 +1,7 @@
 /**
  * This class provides a convenient way to test shuffling methods.
  */
+import java.util.Arrays;
 public class Shuffler {
 
  /**
@@ -17,7 +18,7 @@ public class Shuffler {
  public static void main(String[] args) {
   System.out.println("Results of " + SHUFFLE_COUNT +
          " consecutive perfect shuffles:");
-  int[] values1 = {0, 1, 2, 3};
+  int[] values1 = {0, 1, 2, 3,4,5,6};
   for (int j = 1; j <= SHUFFLE_COUNT; j++) {
    perfectShuffle(values1);
    System.out.print("  " + j + ":");
@@ -30,7 +31,7 @@ public class Shuffler {
 
   System.out.println("Results of " + SHUFFLE_COUNT +
          " consecutive efficient selection shuffles:");
-  int[] values2 = {0, 1, 2, 3};
+  int[] values2 = {0, 1, 2, 3,4,5,6};
   for (int j = 1; j <= SHUFFLE_COUNT; j++) {
    selectionShuffle(values2);
    System.out.print("  " + j + ":");
@@ -41,6 +42,34 @@ public class Shuffler {
   }
   System.out.println();
   
+  System.out.println("Testing flip()...");
+  int NUM_FLIPS = 100;
+  int num_heads = 0;
+  for(int i = 0; i < NUM_FLIPS; i++)
+  {
+    if(flip().equals("heads"))
+      num_heads++;
+  }
+  System.out.println("Total flips: " + NUM_FLIPS);
+  System.out.printf("Heads: %d\tTails: %d\n",num_heads,NUM_FLIPS-num_heads);
+  System.out.println();
+  
+  System.out.println("Testing arePermutations()...");
+  int[] a = {1,2,3,4};
+  int[] b = {4,3,2,1};
+  int[] c = {1,3,5,7};
+  System.out.println("a: " + Arrays.toString(a));
+  System.out.println("b: " + Arrays.toString(b));
+  System.out.println("c: " + Arrays.toString(c));
+  if(arePermutations(a,b))
+    System.out.println("a and b are permutations.");
+  else
+    System.out.println("a and b are NOT permutations.");
+  
+  if(arePermutations(a,c))
+    System.out.println("a and c are permutations.");
+  else
+    System.out.println("a and c are NOT permutations.");
   
  }
 
@@ -96,7 +125,7 @@ public class Shuffler {
  public static String flip()
  {
    double r = Math.random();
-   if (r < 0.3)
+   if (r < 0.333)
      return "tails";
    return "heads";
  }
