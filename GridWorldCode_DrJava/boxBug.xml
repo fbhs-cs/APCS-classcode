@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drjava version="drjava-20090630-r4943">
+  <project autorefresh="false" build="classes/boxBug/" main="BoxBugRunner" root="projects/boxBug/" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="BoxBug.java" package="" timestamp="16-Apr-2007 06:49:14">
+        <select from="566" to="566"/>
+        <scroll column="0" row="0"/>
+      </file>
+      <file name="BoxBugRunner.java" package="" timestamp="16-Apr-2007 06:49:14">
+        <select from="566" to="566"/>
+        <scroll column="0" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="../../gridworld.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+  </project>
+</drjava>
