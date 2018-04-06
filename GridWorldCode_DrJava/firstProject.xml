@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<drjava version="drjava-20090630-r4943">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20160913-225446">
   <project autorefresh="false" build="classes/firstProject/" main="BugRunner" root="projects/firstProject/" work="">
     <createjar file=""/>
     <source>
-      <file active="true" name="BugRunner.java" package="" timestamp="16-Apr-2007 06:49:14">
+      <file active="true" name="BugRunner.java" package="" timestamp="27-Mar-2018 12:18:23">
         <select from="0" to="0"/>
         <scroll column="0" row="0"/>
       </file>
@@ -17,5 +17,6 @@
     <breakpoints/>
     <watches/>
     <bookmarks/>
+    <preferences/>
   </project>
 </drjava>
